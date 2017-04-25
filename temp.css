@@ -1,0 +1,17 @@
+/* temp.css */
+
+#render-list {
+	list-style-type:none;
+}
+
+#render-list li {
+	border:1px solid gray;
+	border-radius:3px;
+	padding: 0.5em 1em;
+	margin: 0.5em;
+
+}
+
+#render-list > :first-child {
+	background:#69be28;
+}
