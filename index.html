@@ -17,7 +17,7 @@
 	<script src="js/fuse.js"></script>
 </head>
 <body>
-	<h1 style="color:#f0f0f0">this is a prototype</h1>
+	<h1 style="color:#f0f0f0">this is a prototype <span class="but-why-memes" style="color:white;">. jpeg</span></h1>
 	<div class="container">
 		<div class="row">
 			<div class="column large-9">
@@ -79,13 +79,17 @@
 			$('.delete-me').hide();
 			var listContents = $('#list-courses').html();
 			listContents = 
-			listContents + "<li><b>" + results[0].code + "</b> -- "+ results[0].title + "</li>";
+			listContents + "<li><b>" + results[0].code + "</b> -- "+ results[0].title + " <a class='tiny button warning' href='#' onclick='remCourse(this)' style='font-size:1em; padding:3px; margin:0 0 0 1em;'>x</a></li>";
 			$('#list-courses').html(listContents);
 
 			document.getElementById('searchbox').value = '';
 			document.getElementById('searchbox').focus();
 			searchCourses();
 			return false;
+		}
+		function remCourse(e)
+		{
+			e.parentNode.parentNode.removeChild(e.parentNode);
 		}
 	</script>
 	
