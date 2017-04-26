@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>PROTOTYPE</title>
 
-	<link rel="stylesheet" href="app.css" />
+	<link rel="stylesheet" href="stylesheets/app.css" />
 	<link rel="stylesheet" href="temp.css">
 	
 	<script src="bower_components/modernizr/modernizr.js"></script>
@@ -76,9 +76,8 @@
 
 			$('#render-list').html(t);
 		}
-		function addCourse(event e)
+		function addCourse()
 		{
-			e.preventDefault();
 			$('.delete-me').hide();
 			var listContents = $('#list-courses').html();
 			listContents = 
@@ -86,7 +85,6 @@
 			$('#list-courses').html(listContents);
 
 			document.getElementById('omnisearch').reset();
-			return false;
 		}
 	</script>
 	
