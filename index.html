@@ -29,7 +29,7 @@
 				</ul>
 				<hr>
 				<div class="container-omnisearch">
-					<form onsubmit="addCourse()" id="omnisearch">
+					<form onsubmit="addCourse();" id="omnisearch">
 								<input type="text" id="searchbox" onkeyup="searchCourses()" placeholder="fuzzy course search -- try typing: ITSS 4380">
 					</form>
 				</div>
@@ -76,9 +76,9 @@
 
 			$('#render-list').html(t);
 		}
-		function addCourse(event)
+		function addCourse(event e)
 		{
-			event.preventDefault();
+			e.preventDefault();
 			$('.delete-me').hide();
 			var listContents = $('#list-courses').html();
 			listContents = 
