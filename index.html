@@ -17,7 +17,7 @@
 	<script src="js/fuse.js"></script>
 </head>
 <body>
-	<h1 style="color:#f0f0f0">this is a prototype <span class="but-why-memes" style="color:white;">. jpeg</span></h1>
+	<h1 style="color:#f0f0f0">&nbsp;this is a prototype <span class="but-why-memes" style="color:white;">. jpeg</span></h1>
 	<div class="container">
 		<div class="row">
 			<div class="column large-9">
@@ -35,8 +35,10 @@
 			</div>
 			<div class="column large-3">
 				<div class="row">
-					<h2>top results</h2>
-					<ul id="render-list"></ul>
+					<h2>top results:</h2>
+					<ul id="render-list">
+						<li style="background-color:white; text-align:center">waiting for search<div id="dots">...</div></li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -92,6 +94,13 @@
 			e.parentNode.parentNode.removeChild(e.parentNode);
 		}
 	</script>
-	
+	<script>
+		dotcounter = 0;
+		setInterval(function(){
+			var dotcounter = dotcounter + 1;
+			var times = dotcounter % 3;
+			document.getElementById('dots').text = '.'.repeat(times);
+		},1000);
+	</script>
 </body>
 </html>
