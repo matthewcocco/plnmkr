@@ -29,15 +29,13 @@
 				</ul>
 				<hr>
 				<div class="container-omnisearch">
-					<form onsubmit="addCourse();" id="omnisearch">
-								<input type="text" id="searchbox" onkeyup="searchCourses()" placeholder="fuzzy course search -- try typing: ITSS 4380">
-					</form>
+				<input type="text" id="searchbox" onkeyup="searchCourses()" placeholder="fuzzy course search -- try typing: ITSS 4380">
+				<button onclick="addCourse();">click me to add top result</button>
 				</div>
 			</div>
 			<div class="column large-3">
 				<div class="row">
 					<h2>top results</h2>
-					<p>hit 'enter' to add top result</p>
 					<ul id="render-list"></ul>
 				</div>
 			</div>
@@ -84,7 +82,9 @@
 			listContents + "<li><b>" + results[0].code + "</b> -- "+ results[0].title + "</li>";
 			$('#list-courses').html(listContents);
 
-			document.getElementById('omnisearch').reset();
+			document.getElementById('searchbox').value = '';
+			document.getElementById('searchbox').focus();
+			return false;
 		}
 	</script>
 	
