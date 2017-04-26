@@ -76,8 +76,9 @@
 
 			$('#render-list').html(t);
 		}
-		function addCourse()
+		function addCourse(event e)
 		{
+			e.preventDefault();
 			$('.delete-me').hide();
 			var listContents = $('#list-courses').html();
 			listContents = 
