@@ -1,29 +1,15 @@
-# Foundation Compass Template
+# courseplanner / planmaker
 
-The easiest way to get started with Foundation + Compass.
+primitive UI prototype demo for degree-plan-making interface component of courseplanner.
 
-## Requirements
+to use, go to http://matthewcocco.com/plnmkr or serve the root of this repo with your favorite solution.
 
-  * Ruby 1.9+
-  * [Node.js](http://nodejs.org)
-  * [compass](http://compass-style.org/): `gem install compass`
-  * [bower](http://bower.io): `npm install bower -g`
+hacked together with the help of the [foundation framework][foundation] (prestyled html) & [fusejs][fusejs] library (fuzzy search done right)
 
-## Quickstart
+built in a group project partnership with (Connor Irvine, Conrad Irving), Jens Stamenov, Jacob Woolf as part of ITSS 4380.501.17s @ UT Dallas
 
-  * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
-  * Run `bower install` to install the latest version of Foundation
-  
-Then when you're working on your project, just run the following command:
+the feverish 'kludge' commits for the demo as things stopped working (or more likely, as bugs were fixed and unintended but correct behavior came about) are something I regret but were necessary to present. I miss the enter-to-add-course interaction but had to scrap it for the awful button so we wouldn't repeatedly navigate to the same page over and over again.
 
-```bash
-bundle exec compass watch
-```
+TODO: revisit this idea but with proper web components instead of just javascript and the "caching magic" of preformatted json
 
-## Upgrading
-
-If you'd like to upgrade to a newer version of Foundation down the road just run:
-
-```bash
-bower update
-```
+MC
